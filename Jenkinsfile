@@ -9,7 +9,7 @@ pipeline {
                 sh "npm install"
             }
         }
-        steps("Test"){
+        stage("Test"){
             steps{
                 echo "===== Executing test ====="
                 sh "npm test"
